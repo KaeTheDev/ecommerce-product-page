@@ -1,2 +1,71 @@
 @use 'variables' as *;
-@use '../base/typography' as *;
+
+// Text Preset 1 – Kumbh Sans Bold, 44px / 48px
+@mixin text-preset-1 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 2.75rem; // 44px
+  line-height: 3rem; // 48px
+  letter-spacing: 0;
+  color: $black-hex;
+}
+
+// Text Preset 2 – Kumbh Sans Bold, 28px / 32px
+@mixin text-preset-2 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 1.75rem; // 28px
+  line-height: 2rem; // 32px
+  letter-spacing: 0;
+  color: $black-hex;
+}
+
+// Text Preset 3 (Bold) – 16px / 26px
+@mixin text-preset-3-bold {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 1rem; // 16px
+  line-height: 1.625rem; // 26px
+  letter-spacing: 0;
+  color: $black-hex;
+}
+
+// Text Preset 3 (Regular) – 16px / 26px
+@mixin text-preset-3-regular {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 1rem; // 16px
+  line-height: 1.625rem; // 26px
+  letter-spacing: 0;
+  color: $black-hex;
+}
+
+// Text Preset 4 – Regular, 15px / 26px
+@mixin text-preset-4 {
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 0.9375rem; // 15px
+  line-height: 1.625rem; // 26px
+  letter-spacing: 0;
+  color: $black-hex;
+}
+
+// Text Preset 5 – Bold, 13px / 16px, 2px letter-spacing
+@mixin text-preset-5 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 0.8125rem; // 13px
+  line-height: 1rem; // 16px
+  letter-spacing: 0.125rem; // 2px
+  color: $black-hex;
+}
+
+// Text Preset 6 – Bold, 12px / 15px, 1.85px letter-spacing
+@mixin text-preset-6 {
+  font-family: $font-family;
+  font-weight: 700;
+  font-size: 0.75rem; // 12px
+  line-height: 0.9375rem; // 15px
+  letter-spacing: 0.1156rem; // ~1.85px
+  color: $black-hex;
+}

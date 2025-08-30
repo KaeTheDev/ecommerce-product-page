@@ -1,1 +1,47 @@
 // FONT-FAMILY
+$font-family: 'Kumbh Sans', sans-serif;
+
+// COLORS
+$white-hex: #ffffff;
+$white-rgb: rgb(255,255,255);
+$white-hsl: hsl(0, 100%, 100%);
+
+$black-hex: #000000;
+$black-rgb: rgb(0,0,0);
+$black-hsl: hsl(0, 0%, 0%);
+
+$dark-grey-hex: #1d2026;
+$dark-grey-rgb: rgb(29,32, 38);
+$dark-grey-hsl: hsl(220, 13%, 13%);
+
+$grey-hex: #69707D;
+$grey-rgb: rgb(105, 112, 125);
+$grey-hsl: hsl(219, 9%, 45%);
+
+$light-grey-hex: #c3cad9;
+$light-grey-rgb: rgb(195, 202, 217);
+$light-grey-hsl: hsl(221, 22%, 81%);
+
+$dark-orange-hex: #ff7e1b;
+$dark-orange-rgb: rgb(255, 126, 27);
+$dark-orange-hsl: hsl(26, 100%, 55%);
+
+$light-orange-hex: #ffab6a;
+$light-orange-rgb: rgb(255, 171, 106);
+$light-orange-hsl: hsl(26, 100%, 71%);
+
+
+// SPACING SCALE
+$spacing-0: 0;
+$spacing-100: 0.5rem;  // 8px
+$spacing-200: 1rem;    // 16px
+$spacing-300: 1.5rem;  // 24px
+$spacing-400: 2rem;    // 32px
+$spacing-500: 2.5rem;  // 40px
+$spacing-600: 3rem;    // 48px
+$spacing-700: 3.5rem;  // 56px
+$spacing-900: 4.5rem;  // 72px
+$spacing-1000: 5rem;   // 80px
+$spacing-1200: 6rem;   // 96px
+$spacing-1300: 6.5rem; // 104px
+$spacing-1600: 8rem;   // 128px
