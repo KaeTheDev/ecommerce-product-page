@@ -1,0 +1,9 @@
+// 1. Abstracts – Use `as *` so you don’t need to prefix variables or mixins
+@use 'abstracts' as *;
+
+// 2. Base – Global resets and base styles don’t need prefixing either
+@use 'base' as *;
+
+// 3. Components – Use a namespace so class names or mixins don’t clash
+@use 'components' as comp;
+

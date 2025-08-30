@@ -1,0 +1,47 @@
+/* === Custom CSS Reset === */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+  }
+  
+  button {
+    cursor: pointer; /* Improve UX by showing pointer on buttons */
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  body {
+    line-height: 1.5; /* Sensible default line-height */
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* Optional: smooth scrolling if desired */
+  html {
+    scroll-behavior: smooth;
+  }
