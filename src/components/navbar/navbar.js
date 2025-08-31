@@ -2,22 +2,23 @@ export function Navbar() {
     const nav = document.createElement('header');
     nav.className = 'navbar';
 
+    const basePath = '/ecommerce-product-page';
     nav.innerHTML = `
     <nav class="navbar__container">
 
       <!-- Left side -->
       <div class="navbar__left">
         <button class="navbar__toggle" aria-label="Open Menu">
-          <img src="public/assets/images/icon-menu.svg" alt="hamburger menu"/>
+          <img src="${basePath}/assets/images/icon-menu.svg" alt="hamburger menu"/>
         </button>
 
         <a href="./" class="navbar__logo">
-          <img src="public/assets/images/logo.svg" alt="sneakers logo"/>
+          <img src="${basePath}/assets/images/logo.svg" alt="sneakers logo"/>
         </a>
 
         <ul class="navbar__links">
            <button class="navbar__close" aria-label="Close Menu">
-            <img src="public/assets/images/icon-close.svg" alt="close menu"/>
+            <img src="${basePath}/assets/images/icon-close.svg" alt="close menu"/>
           </button>
           <li class="navbar__link-item"><a href="#" class="navbar__link">Collections</a></li>
           <li class="navbar__link-item"><a href="#" class="navbar__link">Men</a></li>
@@ -30,11 +31,11 @@ export function Navbar() {
       <!-- Right side -->
       <div class="navbar__right">
         <button id="cart-toggle" class="navbar__cart" aria-label="Cart">
-          <img src="public/assets/images/icon-cart.svg" alt="cart"/>
+          <img src="${basePath}/assets/images/icon-cart.svg" alt="cart"/>
         </button>
 
         <a href="#" class="navbar__avatar">
-          <img src="public/assets/images/image-avatar.png" alt="profile pic"/>
+          <img src="${basePath}/assets/images/image-avatar.png" alt="profile pic"/>
         </a>
       </div>
 
