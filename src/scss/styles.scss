@@ -5,8 +5,4 @@
 @use 'base' as *;
 
 // 3. Components – Use a namespace so class names or mixins don’t clash
-// @use 'components' as comp;
-
-body {
-    background: pink; // test style
-  }  
+@use 'components' as comp;

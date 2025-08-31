@@ -1,0 +1,122 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.navbar {
+    background-color: vars.$white-hex;
+    color: vars.$grey-hex;
+    height: 96px;
+    display: flex;
+    align-items: center;
+  
+    &__container {
+      max-width: 1110px;
+      margin-inline: auto;
+      width: 100%;
+      padding-inline: clamp(1rem, 5vw, 3rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__left {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    &__logo img {
+      width: 143px;
+    }
+  
+    &__links {
+      list-style: none;
+      display: flex;
+      gap: clamp(1.2rem, 3vw, 2.5rem);
+  
+      &.is-open {
+        display: flex;
+      }
+    }
+  
+    &__link {
+      @include mix.text-preset-4;
+      color: vars.$grey-hex;
+  
+      &:hover {
+        color: vars.$black-hex;
+      }
+    }
+  
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    &__cart img {
+      width: 23px;
+      height: 20px;
+    }
+  
+    &__avatar img {
+      width: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  
+    &__toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    /* 🔑 Hide close button by default (desktop) */
+    &__close {
+      display: none; 
+    }
+  
+    /* 📱 Mobile / Tablet */
+    @media (max-width: 768px) {
+      &__links {
+        display: none; // hidden by default
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 250px;
+        background: vars.$white-hex;
+        box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+        z-index: 1000;
+  
+        &.is-open {
+          display: flex;
+        }
+      }
+  
+      &__close {
+        display: block; // ✅ only visible on mobile menu
+        align-self: flex-start;
+        background: none;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 2rem;
+  
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+  
+      &__toggle {
+        display: block;
+      }
+  
+      &__logo img {
+        width: 120px;
+      }
+    }
+  }  
