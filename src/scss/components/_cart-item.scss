@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as vars;
+@use "../abstracts/mixins" as mix;
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: vars.$spacing-200;
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 0.5rem; // keep as rem since not in vars
+    flex-shrink: 0;
+    display: block;
+  }
+
+  &__details {
+    flex: 1;
+    padding: 0 vars.$spacing-200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: vars.$spacing-100;
+  }
+
+  &__name {
+    @include mix.text-preset-3-regular;
+    color: vars.$grey-hex;
+    margin: 0;
+  }
+
+  &__line {
+    display: flex;
+    gap: vars.$spacing-100;
+    align-items: baseline;
+  }
+
+  &__price {
+    @include mix.text-preset-4;
+    color: vars.$grey-hex;
+  }
+
+  &__total {
+    @include mix.text-preset-4;
+    font-weight: 700; // override to bold
+    color: vars.$black-hex;
+  }
+
+  &__remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: vars.$spacing-200;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
