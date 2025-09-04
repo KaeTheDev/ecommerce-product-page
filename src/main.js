@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     const products = await fetchProductData();
-    console.log("📦 Raw products data:", products);
-    console.log("📦 Type of products:", typeof products);
-    console.log("📦 Is products an array?", Array.isArray(products));
 
     const fallSneakers = products.find(
       (p) => p.slug === "fall-limited-sneakers"
