@@ -25,10 +25,10 @@ export function Lightbox(images) {
     </div>
     <div class="lightbox__modal" aria-modal="true" role="dialog" style="display:none;">
       <button class="lightbox__close" aria-label="Close">
-        <img src="Public/assets/images/icon-close.svg" alt="Close X"/>
+        <img src="/ecommerce-product-page/assets/images/icon-close.svg" alt="Close X"/>
       </button>
       <button class="lightbox__chevron lightbox__chevron--prev" aria-label="Previous">
-        <img src="Public/assets/images/icon-previous.svg" alt="Previous"/>
+        <img src="/ecommerce-product-page/images/icon-previous.svg" alt="Previous"/>
       </button>
       <div class="lightbox__modal-content">
         <img src="" alt="Enlarged image" class="lightbox__modal-image"/>
@@ -47,7 +47,7 @@ export function Lightbox(images) {
           .join("")}
       </div>
       <button class="lightbox__chevron lightbox__chevron--next" aria-label="Next">
-        <img src="Public/assets/images/icon-next.svg" alt="Next"/>
+        <img src="/ecommerce-product-page/assets/images/icon-next.svg" alt="Next"/>
       </button>
     </div>
   `;
