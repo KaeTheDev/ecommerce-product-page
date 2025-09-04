@@ -83,7 +83,7 @@ Total: $${c.toLocaleString()}`)}}),e.querySelector(".cart-modal__checkout").appe
         <img src="/ecommerce-product-page/assets/images/icon-close.svg" alt="Close X"/>
       </button>
       <button class="lightbox__chevron lightbox__chevron--prev" aria-label="Previous">
-        <img src="/ecommerce-product-page/images/icon-previous.svg" alt="Previous"/>
+        <img src="/ecommerce-product-page/assets/images/icon-previous.svg" alt="Previous"/>
       </button>
       <div class="lightbox__modal-content">
         <img src="" alt="Enlarged image" class="lightbox__modal-image"/>
